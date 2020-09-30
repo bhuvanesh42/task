@@ -94,61 +94,60 @@ class _HomePageState extends State<HomePage> {
       itemCount: emp.length,
       itemBuilder: (ctx, pos) {
         return Padding(
-          padding: const EdgeInsets.all(8.0),
-          child:Container(
-            margin: EdgeInsets.symmetric(horizontal: 50, vertical: 50),
-            child: Card(
-              elevation: 16,
-              child: Container(
-                color: Colors.white,
-                height: 270,
-                width: 300,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      CircleAvatar(
-                        radius: 50,
-                        backgroundColor: Colors.white,
-                        child: Image.asset(
-                            'assets/images/logo.png ${emp[pos].image}'),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Text(
-                        ' ${emp[pos].id}',
-                        style: TextStyle(fontFamily: 'Bree', fontSize: 17),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        'Employee Name : ${emp[pos].name},',
-                        style: TextStyle(fontFamily: 'Bree', fontSize: 17),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        'Employee Salary : ${emp[pos].salary}',
-                        style: TextStyle(fontFamily: 'Bree', fontSize: 17),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        'Employee Age : ${emp[pos].age}',
-                        style: TextStyle(fontFamily: 'Bree', fontSize: 17),
-                      )
-                    ],
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 50, vertical: 50),
+              child: Card(
+                elevation: 16,
+                child: Container(
+                  color: Colors.white,
+                  height: 300,
+                  width: 300,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        CircleAvatar(
+                          radius: 50,
+                          backgroundColor: Colors.white,
+                          child: Image.asset(
+                              'assets/images/logo.png ${emp[pos].image}'),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          ' ${emp[pos].id}',
+                          style: TextStyle(fontFamily: 'Bree', fontSize: 17),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Employee Name : ${emp[pos].name},',
+                          style: TextStyle(fontFamily: 'Bree', fontSize: 17),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Employee Salary : ${emp[pos].salary}',
+                          style: TextStyle(fontFamily: 'Bree', fontSize: 17),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Employee Age : ${emp[pos].age}',
+                          style: TextStyle(fontFamily: 'Bree', fontSize: 17),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ),
-          )
-        );
+            ));
       },
     );
   }

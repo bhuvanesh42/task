@@ -27,10 +27,10 @@ class Datas {
 }
 
 class EmployeeData {
-  String id;
+  int id;
   String name;
-  String salary;
-  String age;
+  int salary;
+  int age;
   String image;
 
   EmployeeData({this.id, this.name, this.salary, this.age, this.image});
