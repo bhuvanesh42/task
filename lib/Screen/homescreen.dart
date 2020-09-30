@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:lottie/lottie.dart';
 import 'package:task/Model/model.dart';
 import 'package:task/bloc/home/home_bloc.dart';
 import 'package:task/bloc/home/home_event.dart';
 import 'package:task/bloc/home/home_state.dart';
+import 'package:lottie/lottie.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -29,6 +31,7 @@ class _HomePageState extends State<HomePage> {
             child: Scaffold(
               appBar: AppBar(
                 title: Text("Employee Data"),
+                backgroundColor: Colors.redAccent,
                 actions: <Widget>[
                   IconButton(
                     icon: Icon(Icons.refresh),
@@ -72,9 +75,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget buildLoading() {
-    return Center(
-      child: CircularProgressIndicator(),
-    );
+    return Center(child: Lottie.asset('assets/lottie/loading-animation.json'));
   }
 
   Widget buildErrorUi(String message) {
@@ -96,24 +97,24 @@ class _HomePageState extends State<HomePage> {
         return Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 50, vertical: 50),
+              margin: EdgeInsets.symmetric(horizontal: 40, vertical: 30),
               child: Card(
                 elevation: 16,
                 child: Container(
                   color: Colors.white,
-                  height: 300,
+                  height: 250,
                   width: 300,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        CircleAvatar(
-                          radius: 50,
-                          backgroundColor: Colors.white,
-                          child: Image.asset(
-                              'assets/images/logo.png ${emp[pos].image}'),
-                        ),
+                        // CircleAvatar(
+                        //   radius: 50,
+                        //   backgroundColor: Colors.white,
+                        //   child: Image.asset(
+                        //       'assets/images/logo.png ${emp[pos].image}'),
+                        // ),
                         SizedBox(
                           height: 20,
                         ),
