@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:task/Screen/firstScreen.dart';
-import 'package:task/bloc/bloc.dart';
-import 'package:task/bloc/provider.dart';
+import 'package:task/bloc/login/bloc.dart';
+import 'package:task/bloc/login/provider.dart';
 
 class Login extends StatelessWidget {
   @override
