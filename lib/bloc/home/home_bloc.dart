@@ -10,13 +10,11 @@ import 'home_event.dart';
 import 'home_state.dart';
 
 class EmployeeBloc extends Bloc<ArticleEvent, ArticleState> {
-
   EmployeeRepository repository;
 
   EmployeeBloc({@required this.repository});
 
   @override
-  
   ArticleState get initialState => ArticleInitialState();
 
   @override
@@ -31,5 +29,4 @@ class EmployeeBloc extends Bloc<ArticleEvent, ArticleState> {
       }
     }
   }
-
 }
