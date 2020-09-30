@@ -16,7 +16,7 @@ class EmployeeBloc extends Bloc<ArticleEvent, ArticleState> {
   EmployeeBloc({@required this.repository});
 
   @override
-  // TODO: implement initialState
+  
   ArticleState get initialState => ArticleInitialState();
 
   @override
